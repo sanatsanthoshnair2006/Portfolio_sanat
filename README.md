@@ -34,17 +34,6 @@ Create a well-structured portfolio website to showcase my skills, creativity, an
 - **Certifications & Extra**: Achievements via DataCamp, Infosys Springboard, etc.
 - **Resume Download**: Easily accessible resume PDF.
 
-## Hosting Instructions (GitHub Pages)
-
-To host this repository on GitHub pages:
-1. Ensure all files (`index.html`, `style.css`, `Resume/sanatresume.pdf`, and `README.md`) are committed and uploaded to a public GitHub repository.
-2. Navigate to your repository in the browser.
-3. Click on the **Settings** tab.
-4. On the left sidebar, click on **Pages**.
-5. Under **Source**, select the `main` or `master` branch and the `/root` folder.
-6. Click **Save**.
-7. Wait a few minutes and GitHub will provide you with a live URL to your hosted portfolio.
-
 ---
 **Created by:** Sanat Santhosh Nair 
 **Institution:** Amrita Vishwa Vidyapeetham
