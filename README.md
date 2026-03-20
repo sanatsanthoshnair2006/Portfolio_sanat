@@ -1,7 +1,7 @@
 # Sanat Santhosh Nair - Portfolio Website
 
-This is the repository for my portfolio website, created for the **23CSE113 User Interface Design Lab Assignment**.
-It was built strictly using HTML5 and CSS3 to showcase my skills as an Aspiring Data Scientist.
+This is the repository for my portfolio website.
+It was built strictly using HTML5 and CSS3.
 
 ## Objective
 
