@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Santhosh Nair — Portfolio</title>
+    <meta name="description" content="Portfolio of Sanat Santhosh Nair, Aspiring Data Scientist and AI enthusiast studying at Amrita Vishwa Vidyapeetham.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Unbounded:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Star field background -->
+    <div class="stars" aria-hidden="true">
+        <div class="star-layer star-layer--s"></div>
+        <div class="star-layer star-layer--m"></div>
+        <div class="star-layer star-layer--l"></div>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#home" class="nav__logo">Portfolio<span>.</span></a>
+
+            <ul class="nav__list" id="nav-list">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#education" class="nav__link">Education</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#certifications" class="nav__link">More</a></li>
+                <li>
+                    <a href="Resume/sanatresume.pdf" download class="nav__link nav__btn">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
+                </li>
+            </ul>
+
+            <button class="nav__burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- ==================== HOME ==================== -->
+        <section class="home section" id="home">
+            <div class="home__blob home__blob--1" aria-hidden="true"></div>
+            <div class="home__blob home__blob--2" aria-hidden="true"></div>
+
+            <div class="home__container container grid">
+                <!-- Left content -->
+                <div class="home__content">
+                    <div class="home__availability">
+                        <span class="home__avail-dot"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">
+                        Sanat<br>
+                        <span class="home__name--accent">Santhosh</span> Nair
+                    </h1>
+
+                    <div class="home__subtitle">
+                        <span class="home__subtitle-bar"></span>
+                        <span class="home__subtitle-text">Aspiring Data Scientist</span>
+                    </div>
+
+                    <p class="home__description">
+                        Passionate about transforming data into meaningful insights. Skilled in Python, data cleaning, exploratory data analysis, and machine learning.
+                    </p>
+
+                    <!-- Stats row -->
+                    <div class="home__stats">
+                        <div class="home__stat">
+                            <span class="home__stat-val">8.85</span>
+                            <span class="home__stat-lab">CGPA</span>
+                        </div>
+                        <div class="home__stat-divider"></div>
+                        <div class="home__stat">
+                            <span class="home__stat-val">3+</span>
+                            <span class="home__stat-lab">Projects</span>
+                        </div>
+                        <div class="home__stat-divider"></div>
+                        <div class="home__stat">
+                            <span class="home__stat-val">3</span>
+                            <span class="home__stat-lab">Certifications</span>
+                        </div>
+                    </div>
+
+                    <div class="home__actions">
+                        <a href="#projects" class="btn btn--primary">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="Resume/sanatresume.pdf" download class="btn btn--ghost">
+                            <span>Download Resume</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-label">Follow me</span>
+                        <div class="home__social-links">
+                            <a href="https://linkedin.com/in/sanat-santhosh-nair-2a5aaa320" target="_blank" aria-label="LinkedIn" class="home__social-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/sanatsanthoshnair2006" target="_blank" aria-label="GitHub" class="home__social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right image -->
+                <div class="home__image">
+                    <div class="home__img-frame">
+                        <div class="home__img-ring"></div>
+                        <div class="home__img-circle">
+                            <img src="images/sanat_image.png" alt="Sanat Santhosh Nair" class="home__img">
+                        </div>
+                    </div>
+
+                    <!-- Floating cards -->
+                    <div class="float-card float-card--tl">
+                        <i class="fa-brands fa-python float-card__icon"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="float-card float-card--br">
+                        <i class="fa-solid fa-brain float-card__icon"></i>
+                        <span>ML / AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll cue -->
+            <a href="#education" class="home__scroll-cue">
+                <span class="home__scroll-mouse">
+                    <span class="home__scroll-wheel"></span>
+                </span>
+                <span class="home__scroll-text">Scroll down</span>
+            </a>
+        </section>
+
+        <!-- ==================== EDUCATION ==================== -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">My Background</span>
+                    <h2 class="section__title">Education <span>Journey</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__meta">
+                            <span class="timeline__year">2024</span>
+                            <span class="timeline__type">B.Tech</span>
+                        </div>
+                        <div class="timeline__connector">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__line"></div>
+                        </div>
+                        <div class="timeline__card">
+                            <span class="timeline__badge timeline__badge--current">Current</span>
+                            <h3 class="timeline__degree">Artificial Intelligence &amp; Data Science</h3>
+                            <h4 class="timeline__school"><i class="fa-solid fa-building-columns"></i> Amrita Vishwa Vidyapeetham, Amritapuri</h4>
+                            <p class="timeline__date"><i class="fa-regular fa-calendar"></i> July 2024 – Present</p>
+                            <div class="timeline__score">
+                                <span class="timeline__score-label">CGPA</span>
+                                <span class="timeline__score-val">8.85 / 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__meta">
+                            <span class="timeline__year">2024</span>
+                            <span class="timeline__type">HSC</span>
+                        </div>
+                        <div class="timeline__connector">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__line"></div>
+                        </div>
+                        <div class="timeline__card">
+                            <span class="timeline__badge">Class XII</span>
+                            <h3 class="timeline__degree">Higher Secondary — Science</h3>
+                            <h4 class="timeline__school"><i class="fa-solid fa-school"></i> Chavara Public School, Pala</h4>
+                            <p class="timeline__date"><i class="fa-regular fa-calendar"></i> April 2023 – March 2024</p>
+                            <div class="timeline__score">
+                                <span class="timeline__score-label">Score</span>
+                                <span class="timeline__score-val">88.4%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__meta">
+                            <span class="timeline__year">2021</span>
+                            <span class="timeline__type">SSC</span>
+                        </div>
+                        <div class="timeline__connector">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__card">
+                            <span class="timeline__badge">Class X</span>
+                            <h3 class="timeline__degree">Secondary School Certificate</h3>
+                            <h4 class="timeline__school"><i class="fa-solid fa-school"></i> Chavara Public School, Pala</h4>
+                            <p class="timeline__date"><i class="fa-regular fa-calendar"></i> April 2020 – March 2021</p>
+                            <div class="timeline__score">
+                                <span class="timeline__score-label">Score</span>
+                                <span class="timeline__score-val">90.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS ==================== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">What I Know</span>
+                    <h2 class="section__title">Technical <span>Skills</span></h2>
+                </div>
+                <div class="skills__grid">
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="skill__name">Python</h3>
+                        <p class="skill__category">Programming</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 90%"></div>
+                        </div>
+                        <span class="skill__pct">90%</span>
+                    </div>
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="skill__name">SQL</h3>
+                        <p class="skill__category">Database</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 80%"></div>
+                        </div>
+                        <span class="skill__pct">80%</span>
+                    </div>
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-brands fa-r-project"></i>
+                        </div>
+                        <h3 class="skill__name">R</h3>
+                        <p class="skill__category">Data Science</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 75%"></div>
+                        </div>
+                        <span class="skill__pct">75%</span>
+                    </div>
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-solid fa-square-root-variable"></i>
+                        </div>
+                        <h3 class="skill__name">MATLAB</h3>
+                        <p class="skill__category">Data Science</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 70%"></div>
+                        </div>
+                        <span class="skill__pct">70%</span>
+                    </div>
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="skill__name">ANSYS</h3>
+                        <p class="skill__category">Engineering</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 65%"></div>
+                        </div>
+                        <span class="skill__pct">65%</span>
+                    </div>
+
+                    <div class="skill__card">
+                        <div class="skill__icon-wrap">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="skill__name">Machine Learning</h3>
+                        <p class="skill__category">AI / Data Science</p>
+                        <div class="skill__bar-bg">
+                            <div class="skill__bar" style="--w: 78%"></div>
+                        </div>
+                        <span class="skill__pct">78%</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS ==================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">What I've Built</span>
+                    <h2 class="section__title">Featured <span>Projects</span></h2>
+                </div>
+                <div class="projects__grid">
+
+                    <article class="project__card">
+                        <div class="project__img project__img--1"></div>
+                        <div class="project__body">
+                            <div class="project__top">
+                                <span class="project__num">01</span>
+                                <span class="project__tag">IoT</span>
+                            </div>
+                            <h3 class="project__title">IoT-Based Digital Thermometer</h3>
+                            <p class="project__desc">Real-time temperature measurement using sensors and a microcontroller for continuous environmental monitoring.</p>
+                            <a href="https://github.com/sanatsanthoshnair2006" target="_blank" class="project__link">
+                                <span>View Repository</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__img project__img--2"></div>
+                        <div class="project__body">
+                            <div class="project__top">
+                                <span class="project__num">02</span>
+                                <span class="project__tag">Engineering</span>
+                            </div>
+                            <h3 class="project__title">Thermal Stress Analysis of Heat Sink</h3>
+                            <p class="project__desc">Thermal and structural analysis using ANSYS to evaluate temperature-induced deformation and stress distribution.</p>
+                            <a href="https://github.com/sanatsanthoshnair2006" target="_blank" class="project__link">
+                                <span>View Demo</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__img project__img--3"></div>
+                        <div class="project__body">
+                            <div class="project__top">
+                                <span class="project__num">03</span>
+                                <span class="project__tag">AI / ML</span>
+                            </div>
+                            <h3 class="project__title">Vision-Based Gesture Recognition</h3>
+                            <p class="project__desc">Computer vision system to recognize hand gestures and map body poses for real-time human–robot interaction.</p>
+                            <a href="https://github.com/sanatsanthoshnair2006" target="_blank" class="project__link">
+                                <span>View Repository</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICATIONS & EXTRA ==================== -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">Beyond the Classroom</span>
+                    <h2 class="section__title">Achievements &amp; <span>More</span></h2>
+                </div>
+
+                <div class="cert-extra__grid">
+                    <div class="cert-extra__col">
+                        <div class="cert-extra__heading">
+                            <div class="cert-extra__heading-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <h3>Certifications</h3>
+                        </div>
+                        <ul class="cert__list">
+                            <li class="cert__item">
+                                <div class="cert__num">01</div>
+                                <div class="cert__info">
+                                    <h4>Deep Learning in Python</h4>
+                                    <span>DataCamp &nbsp;·&nbsp; Feb 2026</span>
+                                </div>
+                            </li>
+                            <li class="cert__item">
+                                <div class="cert__num">02</div>
+                                <div class="cert__info">
+                                    <h4>OpenAI GPT-3 for Developers</h4>
+                                    <span>Infosys Springboard &nbsp;·&nbsp; Nov 2024</span>
+                                </div>
+                            </li>
+                            <li class="cert__item">
+                                <div class="cert__num">03</div>
+                                <div class="cert__info">
+                                    <h4>Prompt Engineering &amp; AI-first SE</h4>
+                                    <span>Infosys Springboard &nbsp;·&nbsp; Nov 2024</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cert-extra__col">
+                        <div class="cert-extra__heading">
+                            <div class="cert-extra__heading-icon"><i class="fa-solid fa-star"></i></div>
+                            <h3>Extracurricular &amp; Positions</h3>
+                        </div>
+                        <ul class="extra__list">
+                            <li class="extra__item">
+                                <div class="extra__icon"><i class="fa-solid fa-users"></i></div>
+                                <div class="extra__body">
+                                    <h4>Volunteer – Open Innovation, Vidyut 2025</h4>
+                                    <p>Coordinating activities, participant management and event logistics at Amrita Vishwa Vidyapeetham.</p>
+                                </div>
+                            </li>
+                            <li class="extra__item">
+                                <div class="extra__icon"><i class="fa-solid fa-guitar"></i></div>
+                                <div class="extra__body">
+                                    <h4>Trinity College London — Guitar &amp; Keyboard</h4>
+                                    <p>Grade 2 in Guitar and Grade 1 in Keyboard.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER / CONTACT ==================== -->
+    <footer class="footer" id="contact">
+        <div class="footer__glow" aria-hidden="true"></div>
+        <div class="footer__inner container">
+            <div class="footer__brand">
+                <a href="#home" class="footer__logo">Portfolio<span>.</span></a>
+                <p>Aspiring Data Scientist with a strong interest in data analysis, machine learning, and artificial intelligence.</p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/sanat-santhosh-nair-2a5aaa320" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/sanatsanthoshnair2006" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__nav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="Resume/sanatresume.pdf" download><i class="fa-solid fa-chevron-right"></i> Download Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact-col">
+                <h4>Contact</h4>
+                <div class="footer__contact-item">
+                    <div class="footer__contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <p>Kerala, India</p>
+                </div>
+                <div class="footer__contact-item">
+                    <div class="footer__contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <p>+91 8848147904</p>
+                </div>
+                <div class="footer__contact-item">
+                    <div class="footer__contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <p>sanatsanthoshnair2006@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>&copy; 2026 Sanat Santhosh Nair. All rights reserved.</p>
+                <p>23CSE113 UI Design Lab Assignment</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const burger = document.getElementById('nav-burger');
+    const navList = document.getElementById('nav-list');
+    const navLinks = document.querySelectorAll('.nav__link');
+
+    function openNav() {
+        navList.classList.add('nav--open');
+        burger.classList.add('nav--open');
+        burger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+        navList.classList.remove('nav--open');
+        burger.classList.remove('nav--open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    // Stop propagation so the document listener doesn't fire on the same tap
+    burger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navList.classList.contains('nav--open') ? closeNav() : openNav();
+    });
+
+    // Also handle touchstart for snappier mobile response
+    burger.addEventListener('touchstart', (e) => {
+        e.stopPropagation();
+    }, { passive: true });
+
+    // Close when any nav link is tapped
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeNav);
+    });
+
+    // Close when tapping outside nav
+    document.addEventListener('click', (e) => {
+        if (navList.classList.contains('nav--open') &&
+            !navList.contains(e.target)) {
+            closeNav();
+        }
+    });
+</script>
+</body>
+</html>
