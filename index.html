@@ -484,48 +484,6 @@
         </div>
     </footer>
 
-<script>
-    const burger = document.getElementById('nav-burger');
-    const navList = document.getElementById('nav-list');
-    const navLinks = document.querySelectorAll('.nav__link');
 
-    function openNav() {
-        navList.classList.add('nav--open');
-        burger.classList.add('nav--open');
-        burger.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeNav() {
-        navList.classList.remove('nav--open');
-        burger.classList.remove('nav--open');
-        burger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-    }
-
-    // Stop propagation so the document listener doesn't fire on the same tap
-    burger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        navList.classList.contains('nav--open') ? closeNav() : openNav();
-    });
-
-    // Also handle touchstart for snappier mobile response
-    burger.addEventListener('touchstart', (e) => {
-        e.stopPropagation();
-    }, { passive: true });
-
-    // Close when any nav link is tapped
-    navLinks.forEach(link => {
-        link.addEventListener('click', closeNav);
-    });
-
-    // Close when tapping outside nav
-    document.addEventListener('click', (e) => {
-        if (navList.classList.contains('nav--open') &&
-            !navList.contains(e.target)) {
-            closeNav();
-        }
-    });
-</script>
 </body>
 </html>
