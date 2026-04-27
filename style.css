@@ -282,37 +282,6 @@ a, button, [role="button"] {
     color: var(--clr-bg) !important;
 }
 
-.nav__burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    z-index: 10;
-    /* Larger tap target for mobile (min 44×44px recommended) */
-    padding: 10px;
-    margin: -4px;
-    background: none;
-    border: none;
-    outline: none;
-    /* Eliminates 300ms tap delay on mobile */
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.nav__burger span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--clr-title);
-    border-radius: 2px;
-    transition: var(--transition);
-    transform-origin: center;
-}
-
-/* Burger → X animation when open */
-.nav__burger.nav--open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav__burger.nav--open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.nav__burger.nav--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /*=============== HOME ===============*/
 .home {
